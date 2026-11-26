@@ -1,0 +1,124 @@
+{
+  "id": "nda",
+  "title": "Non-Disclosure Agreement (NDA)",
+  "title_hi": "गोपनीयता समझौता",
+  "shortDesc": "Protect secret ideas, code, client lists, and business plans",
+  "shortDesc_hi": "व्यापारिक जानकारी, कोड और व्यापारिक विचारों की सुरक्षा",
+  "icon": "shield-checkmark-outline",
+  "questions": [
+    {
+      "key": "disclosingParty",
+      "label": "Sharing Party (Person / Company sharing secrets)",
+      "label_hi": "गोपनीय जानकारी साझा करने वाला (कंपनी / व्यक्ति)",
+      "placeholder": "e.g. Acme Tech Solutions Pvt Ltd",
+      "placeholder_hi": "उदा. एक्मे टेक सॉल्यूशंस प्राइवेट लिमिटेड",
+      "hint": "Name of the entity disclosing confidential data",
+      "hint_hi": "जो पक्ष अपनी जानकारी साझा कर रहा है",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "receivingParty",
+      "label": "Receiving Party (Person / Company getting secrets)",
+      "label_hi": "जानकारी प्राप्त करने वाला (कंपनी / व्यक्ति)",
+      "placeholder": "e.g. Rahul Deshmukh",
+      "placeholder_hi": "उदा. राहुल देशमुख",
+      "hint": "Name of the partner, consultant, or collaborator",
+      "hint_hi": "साझेदार या सलाहकार का नाम",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "purpose",
+      "label": "Purpose of Sharing Information",
+      "label_hi": "जानकारी साझा करने का उद्देश्य",
+      "placeholder": "e.g. Evaluating software partnership and designing mobile app architecture",
+      "placeholder_hi": "उदा. सॉफ्टवेयर साझेदारी एवं मोबाइल ऐप विकास पर चर्चा",
+      "hint": "State clearly why you are sharing this information",
+      "hint_hi": "स्पष्ट लिखें कि जानकारी किस कार्य हेतु दी जा रही है",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "durationYears",
+      "label": "Confidentiality Duration (in Years)",
+      "label_hi": "गोपनीयता की अवधि (वर्षों में)",
+      "placeholder": "2",
+      "placeholder_hi": "2",
+      "hint": "Typically 2 to 3 years from the date of disclosure",
+      "hint_hi": "आमतौर पर भारत में 2 से 3 वर्ष की अवधि रखी जाती है",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "jurisdictionCity",
+      "label": "Governing City for Dispute Resolution",
+      "label_hi": "विवाद निपटारे हेतु शहर (क्षेत्राधिकार)",
+      "placeholder": "e.g. New Delhi",
+      "placeholder_hi": "उदा. नई दिल्ली",
+      "hint": "The courts of this city will handle any legal disputes",
+      "hint_hi": "किसी विवाद की स्थिति में इस शहर की अदालतें मान्य होंगी",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "clauses": [
+    {
+      "id": "parties",
+      "title": "Parties to the NDA",
+      "title_hi": "पक्षकार",
+      "plain": "This agreement is between {disclosingParty} (Disclosing Party) and {receivingParty} (Receiving Party).",
+      "legal": "THIS NON-DISCLOSURE AGREEMENT is made between {disclosingParty} (hereinafter referred to as the 'Discloser') AND {receivingParty} (hereinafter referred to as the 'Recipient').",
+      "note": "Verify company registration number or individual government ID.",
+      "note_hi": "कंपनी का CIN या व्यक्ति का आधार/पैन अवश्य सत्यापित करें।"
+    },
+    {
+      "id": "confidential_info",
+      "title": "What is Confidential",
+      "title_hi": "गोपनीय जानकारी क्या है",
+      "plain": "Confidential information includes all business plans, software code, customer data, pricing, designs, and notes shared between the parties.",
+      "legal": "Confidential Information shall comprise all proprietary technical, financial, and business data, algorithms, source codes, customer lists, and trade secrets disclosed either orally or in documentary form.",
+      "note": "Mark critical emails and documents with 'CONFIDENTIAL'.",
+      "note_hi": "अति-संवेदनशील दस्तावेजों पर 'CONFIDENTIAL' अवश्य लिखें।"
+    },
+    {
+      "id": "obligations",
+      "title": "Obligations to Keep Secret",
+      "title_hi": "गोपनीयता बनाए रखने के कर्तव्य",
+      "plain": "The Receiving Party agrees to keep all shared information strictly secret. They will not share it with third parties and will only use it for: {purpose}.",
+      "legal": "The Recipient covenants to hold all Confidential Information in strictest confidence, using not less than a reasonable degree of care, and shall use such materials exclusively for the Purpose of: {purpose}.",
+      "note": "Never share secrets via unencrypted public channels.",
+      "note_hi": "गोपनीय जानकारी कभी भी असुरक्षित माध्यमों से न भेजें।"
+    },
+    {
+      "id": "term",
+      "title": "Duration of Protection",
+      "title_hi": "सुरक्षा की अवधि",
+      "plain": "This duty to protect secrets will stay in effect for {durationYears} years from the date of disclosure.",
+      "legal": "The non-disclosure and non-use covenants herein shall survive for a period of {durationYears} years following the effective date of execution.",
+      "note": "Trade secrets can be protected indefinitely if specified.",
+      "note_hi": "ट्रेड सीक्रेट्स को अनिश्चित काल तक सुरक्षित रखा जा सकता है।"
+    },
+    {
+      "id": "jurisdiction",
+      "title": "Dispute Resolution & Jurisdiction",
+      "title_hi": "विवाद निवारण एवं न्यायालय",
+      "plain": "This agreement follows the laws of India. If any dispute arises, the courts in {jurisdictionCity} will have exclusive authority.",
+      "legal": "This agreement shall be governed and construed in accordance with the laws of the Republic of India. The competent courts in {jurisdictionCity} shall exercise exclusive territorial and subject-matter jurisdiction.",
+      "note": "Choose the city where your primary business or residence is located.",
+      "note_hi": "वही शहर चुनें जहां आपका मुख्य कार्यालय या निवास है।"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "long_nda",
+      "condition": "durationYears > 5",
+      "title": "Extended NDA Duration",
+      "title_hi": "लंबी गोपनीयता अवधि",
+      "message": "NDAs exceeding 5 years without narrow trade secret definitions may face enforceability challenges under Section 27 of the Indian Contract Act (Restraint of Trade).",
+      "message_hi": "5 वर्ष से अधिक की सामान्य NDA भारतीय अनुबंध अधिनियम की धारा 27 के तहत चुनौतीपूर्ण हो सकती है।",
+      "action": "A period between 2 to 3 years is market standard in India.",
+      "action_hi": "भारत में 2 से 3 वर्ष की अवधि सबसे मानक मानी जाती है।"
+    }
+  ]
+}
