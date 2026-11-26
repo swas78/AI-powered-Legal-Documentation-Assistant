@@ -1,0 +1,176 @@
+{
+  "id": "rent",
+  "title": "Rent Agreement",
+  "title_hi": "किराया समझौता",
+  "shortDesc": "For renting flats, rooms, or houses",
+  "shortDesc_hi": "मकान, फ्लैट या कमरा किराए पर देने हेतु",
+  "icon": "home-outline",
+  "questions": [
+    {
+      "key": "landlordName",
+      "label": "Full Name of Landlord (Property Owner)",
+      "label_hi": "मकान मालिक का पूरा नाम",
+      "placeholder": "e.g. Ramesh Kumar Sharma",
+      "placeholder_hi": "उदा. रमेश कुमार शर्मा",
+      "hint": "Name as per Aadhaar / PAN card",
+      "hint_hi": "आधार कार्ड के अनुसार नाम",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "tenantName",
+      "label": "Full Name of Tenant",
+      "label_hi": "किराएदार का पूरा नाम",
+      "placeholder": "e.g. Priya Sundaram",
+      "placeholder_hi": "उदा. प्रिया सुंदरम",
+      "hint": "Name of the person who will sign the lease",
+      "hint_hi": "जो व्यक्ति लीज पर हस्ताक्षर करेगा",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "propertyAddress",
+      "label": "Full Address of Rented Property",
+      "label_hi": "किराए के मकान/फ्लैट का पूरा पता",
+      "placeholder": "Flat 302, Palm Heights, Sector 14, Gurugram, Haryana - 122001",
+      "placeholder_hi": "फ्लैट 302, पाम हाइट्स, सेक्टर 14, गुरुग्राम - 122001",
+      "hint": "Include flat number, building, locality, and pincode",
+      "hint_hi": "फ्लैट नं., इमारत और पिनकोड अवश्य लिखें",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "rentAmount",
+      "label": "Monthly Rent Amount (in ₹)",
+      "label_hi": "मासिक किराया (₹ में)",
+      "placeholder": "15000",
+      "placeholder_hi": "15000",
+      "hint": "Amount payable each month, excluding electricity/water",
+      "hint_hi": "बिजली और पानी के बिल के अलावा प्रति माह की राशि",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "depositAmount",
+      "label": "Refundable Security Deposit (in ₹)",
+      "label_hi": "सुरक्षा राशि / डिपॉजिट (₹ में)",
+      "placeholder": "30000",
+      "placeholder_hi": "30000",
+      "hint": "One-time deposit returned when vacating",
+      "hint_hi": "मकान खाली करते समय वापस मिलने वाली राशि",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "durationMonths",
+      "label": "Agreement Duration (in Months)",
+      "label_hi": "समझौते की अवधि (महीनों में)",
+      "placeholder": "11",
+      "placeholder_hi": "11",
+      "hint": "Standard in India is 11 months to avoid mandatory registration",
+      "hint_hi": "भारत में पंजीकरण से बचने हेतु सामान्यतः 11 महीने रखे जाते हैं",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "startDate",
+      "label": "Agreement Start Date",
+      "label_hi": "किराया शुरू होने की तारीख",
+      "placeholder": "01/12/2026",
+      "placeholder_hi": "01/12/2026",
+      "hint": "Date from which tenancy begins",
+      "hint_hi": "जिस दिन से किराएदारी शुरू हो रही है",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "noticePeriodDays",
+      "label": "Notice Period to Vacate (in Days)",
+      "label_hi": "खाली करने के लिए पूर्व सूचना (दिनों में)",
+      "placeholder": "30",
+      "placeholder_hi": "30",
+      "hint": "Standard is 30 days notice by either party",
+      "hint_hi": "सामान्यतः दोनों पक्षों के लिए 30 दिन की सूचना",
+      "type": "number",
+      "required": true
+    }
+  ],
+  "clauses": [
+    {
+      "id": "parties",
+      "title": "Parties & Agreement",
+      "title_hi": "पक्षकार एवं समझौता",
+      "plain": "This agreement is made between {landlordName} (Property Owner) and {tenantName} (Tenant). Both agree to the terms written below in good faith.",
+      "legal": "THIS INDENTURE OF LEASE is made and executed by and between {landlordName}, hereinafter called the LESSOR (which expression shall unless repugnant to the context include their legal heirs and assigns) of the ONE PART; AND {tenantName}, hereinafter designated the LESSEE (which expression shall include their legal representatives) of the OTHER PART.",
+      "note": "Verify photo identity documents (Aadhaar or Passport) before signing.",
+      "note_hi": "हस्ताक्षर से पहले आधार कार्ड अथवा पहचान पत्र अवश्य जांच लें।"
+    },
+    {
+      "id": "premises",
+      "title": "Rented Premises",
+      "title_hi": "किराए का परिसर",
+      "plain": "The Owner gives the Tenant permission to live in the property located at {propertyAddress}. The property will be used purely for peaceful family residence and not for commercial activities.",
+      "legal": "The Lessor hereby grants and demises unto the Lessee the residential premises situated at {propertyAddress}, together with all fixtures and fittings, to hold and occupy the same exclusively for private residential use and not for trade or commerce.",
+      "note": "Ensure electricity and water connections are active and prior dues are cleared.",
+      "note_hi": "सुनिश्चित करें कि पिछले बिजली और पानी के सारे बिल भरे जा चुके हैं।"
+    },
+    {
+      "id": "tenure",
+      "title": "Duration of Stay",
+      "title_hi": "रहने की अवधि",
+      "plain": "This tenancy starts on {startDate} and will run for {durationMonths} months. It can be renewed afterwards if both the Owner and the Tenant agree in writing.",
+      "legal": "The term of this lease shall commence effective from {startDate} and remain in full force and effect for a determinate period of {durationMonths} months, subject to mutual extension under fresh covenants.",
+      "note": "Keep track of the expiry date to renew timely.",
+      "note_hi": "समय पर नवीनीकरण हेतु अंतिम तारीख ध्यान रखें।"
+    },
+    {
+      "id": "rent",
+      "title": "Monthly Rent",
+      "title_hi": "मासिक किराया",
+      "plain": "The Tenant will pay ₹{rentAmount} per month to the Owner. This payment must be made on or before the 5th day of every calendar month through UPI, bank transfer, or cheque.",
+      "legal": "The Lessee covenants to pay unto the Lessor the agreed monthly rental of INR {rentAmount}/- strictly on or before the 5th day of each English calendar month, clear of all deductions, into the Lessor's designated bank account.",
+      "note": "Never pay cash without taking a signed paper receipt.",
+      "note_hi": "नकद भुगतान पर हमेशा रसीद अवश्य लें।"
+    },
+    {
+      "id": "deposit",
+      "title": "Security Deposit",
+      "title_hi": "सुरक्षा राशि",
+      "plain": "The Tenant has deposited an interest-free amount of ₹{depositAmount} with the Owner. The Owner must return this full amount within 7 days of the Tenant handing back the keys, subtracting only unpaid utility bills or physical damage beyond normal wear and tear.",
+      "legal": "The Lessee has paid a sum of INR {depositAmount}/- as interest-free refundable security deposit. The Lessor covenants to refund the said sum within 7 business days of peaceful handover of keys, subject only to deductions for actual damages or utility arrears.",
+      "note": "Keep the bank transfer proof of deposit safe until vacating.",
+      "note_hi": "डिपॉजिट ट्रांसफर का प्रमाण मकान खाली होने तक सुरक्षित रखें।"
+    },
+    {
+      "id": "termination",
+      "title": "Ending the Agreement",
+      "title_hi": "समझौता समाप्त करना",
+      "plain": "Either the Owner or the Tenant can end this agreement at any time by giving {noticePeriodDays} days written notice, or by paying {noticePeriodDays} days rent in lieu of notice.",
+      "legal": "Either party hereto may terminate this lease covenant at any time prior to expiration of term by serving a prior written notice of {noticePeriodDays} days or payment of rental sum in lieu thereof.",
+      "note": "Always send written notice via WhatsApp or Email for record.",
+      "note_hi": "सूचना हमेशा व्हाट्सएप या ईमेल पर लिखित रूप में दें।"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "registration_check",
+      "condition": "durationMonths > 11",
+      "title": "Registration Alert: Period Exceeds 11 Months",
+      "title_hi": "पंजीकरण चेतावनी: अवधि 11 महीने से अधिक है",
+      "message": "Under Section 17 of the Indian Registration Act 1908, any lease exceeding 11 months must be compulsorily registered at the Sub-Registrar's office with applicable state stamp duty. An unregistered lease over 11 months cannot be admitted as primary evidence in an Indian court.",
+      "message_hi": "भारतीय पंजीकरण अधिनियम की धारा 17 के अनुसार 11 माह से अधिक की लीज का सब-रजिस्ट्रार कार्यालय में पंजीकरण कराना अनिवार्य है।",
+      "action": "Change duration to 11 months or register at the local Sub-Registrar office.",
+      "action_hi": "अवधि को 11 महीने करें या सब-रजिस्ट्रार ऑफिस में पंजीकृत कराएं।"
+    },
+    {
+      "id": "high_deposit",
+      "condition": "depositAmount > rentAmount * 3",
+      "title": "High Security Deposit",
+      "title_hi": "उच्च सुरक्षा राशि",
+      "message": "Your security deposit of ₹{depositAmount} is more than 3 times the monthly rent. Under the Model Tenancy Act, security deposits for residential properties are recommended to be capped at a maximum of 2 months' rent.",
+      "message_hi": "आपकी सुरक्षा राशि मासिक किराए के 3 गुना से अधिक है। मॉडल टेनेंसी एक्ट में 2 महीने का किराया अनुशंसित है।",
+      "action": "Consider setting the deposit between 1 to 2 months of monthly rent.",
+      "action_hi": "डिपॉजिट 1 से 2 महीने के किराए के बराबर रखने पर विचार करें।"
+    }
+  ]
+}
