@@ -1,0 +1,48 @@
+{
+  "appName": "Nyay Saathi",
+  "appTagline": "Clear legal papers in plain words",
+  "home": {
+    "title": "Choose an Agreement",
+    "subtitle": "Fill in a few simple details and get a ready-to-use agreement in seconds.",
+    "draftsTitle": "Your Saved Drafts",
+    "noDrafts": "No saved drafts yet. Pick an agreement above to begin.",
+    "freeLegalHelp": "Need free legal aid? Contact DLSA",
+    "freeLegalHelpSub": "Under the Legal Services Authorities Act, eligible citizens get free advice."
+  },
+  "form": {
+    "stepOf": "Question {{current}} of {{total}}",
+    "next": "Continue",
+    "back": "Back",
+    "finish": "Create Agreement",
+    "required": "This information is required",
+    "optional": "Optional"
+  },
+  "draft": {
+    "plainTab": "Plain Words",
+    "legalTab": "Legal Language",
+    "warningTitle": "Legal Warning",
+    "importantNote": "Important Note",
+    "proceedToShare": "Export & Share",
+    "editAnswers": "Edit Answers",
+    "disclaimer": "This is a self-generated draft to assist you and is NOT formal legal advice."
+  },
+  "share": {
+    "title": "Agreement Ready",
+    "subtitle": "You can save as PDF, share via WhatsApp, or print directly.",
+    "savePdf": "Save / Export as PDF",
+    "shareWhatsapp": "Share on WhatsApp",
+    "print": "Print Agreement",
+    "done": "Back to Home",
+    "pdfGenerated": "PDF generated successfully!"
+  },
+  "help": {
+    "title": "Legal Aid & Help",
+    "subtitle": "Get free or affordable assistance from authorized legal services in India.",
+    "nalasHelpline": "National Legal Aid Helpline",
+    "callNalsa": "Call 15100 (Free NALSA Helpline)",
+    "dlsaInfo": "District Legal Services Authority (DLSA)",
+    "dlsaDesc": "Every district court in India has a DLSA front office providing free legal aid to women, SC/ST, laborers, and persons with annual income under ₹3 Lakhs.",
+    "emergencyLawyer": "Find Licensed Lawyers (Bar Council)",
+    "disclaimerBox": "Nyay Saathi is a technology template tool. If you have active court disputes or high-value transactions, consult an advocate registered with the State Bar Council."
+  }
+}
