@@ -1,0 +1,146 @@
+{
+  "id": "freelance",
+  "title": "Freelance Service Contract",
+  "title_hi": "फ्रीलांस सेवा समझौता",
+  "shortDesc": "For freelance developers, designers, writers, and consultants",
+  "shortDesc_hi": "डेवलपर, डिजाइनर, लेखक और स्वतंत्र सलाहकारों के लिए",
+  "icon": "briefcase-outline",
+  "questions": [
+    {
+      "key": "clientName",
+      "label": "Client Name or Company",
+      "label_hi": "क्लाइंट / कंपनी का नाम",
+      "placeholder": "e.g. Innovate Media Solutions LLP",
+      "placeholder_hi": "उदा. इनोवेट मीडिया सॉल्यूशंस",
+      "hint": "Name of the entity paying for your work",
+      "hint_hi": "काम का भुगतान करने वाले का नाम",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "freelancerName",
+      "label": "Freelancer Full Name",
+      "label_hi": "फ्रीलांसर का पूरा नाम",
+      "placeholder": "e.g. Swastik Mishra",
+      "placeholder_hi": "उदा. स्वास्तिक मिश्रा",
+      "hint": "Your full legal name as per PAN/bank account",
+      "hint_hi": "बैंक खाते के अनुसार आपका पूरा नाम",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "serviceScope",
+      "label": "Deliverables & Scope of Work",
+      "label_hi": "काम का विवरण एवं डिलीवरी",
+      "placeholder": "e.g. Complete UI/UX design of 10 mobile app screens in Figma with prototype",
+      "placeholder_hi": "उदा. फिगमा में 10 स्क्रीन का मोबाइल ऐप यूआई डिजाइन एवं प्रोटोटाइप",
+      "hint": "Be specific to avoid unpaid scope creep",
+      "hint_hi": "काम का दायरा बिल्कुल स्पष्ट लिखें ताकि अतिरिक्त काम न करना पड़े",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "totalFee",
+      "label": "Total Agreed Fee (in ₹)",
+      "label_hi": "कुल तय पारिश्रमिक (₹ में)",
+      "placeholder": "40000",
+      "placeholder_hi": "40000",
+      "hint": "Total payment for the complete scope of work",
+      "hint_hi": "पूरे काम का कुल तय शुल्क",
+      "type": "number",
+      "required": true
+    },
+    {
+      "key": "paymentTerms",
+      "label": "Payment Milestone Schedule",
+      "label_hi": "भुगतान की शर्तें एवं किस्तें",
+      "placeholder": "50% advance before start, 50% upon final delivery",
+      "placeholder_hi": "50% काम शुरू होने से पहले, 50% अंतिम डिलीवरी पर",
+      "hint": "Always demand an upfront advance before beginning work",
+      "hint_hi": "काम शुरू करने से पहले एडवांस भुगतान की शर्त जरूर रखें",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "deliveryDate",
+      "label": "Target Delivery Date",
+      "label_hi": "काम पूरा होने की अंतिम तारीख",
+      "placeholder": "15/12/2026",
+      "placeholder_hi": "15/12/2026",
+      "hint": "Deadline for handover of final deliverables",
+      "hint_hi": "तैयार काम सौंपने की अंतिम तिथि",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "revisionLimit",
+      "label": "Included Revisions Count",
+      "label_hi": "शामिल संशोधन / रिवीजन की संख्या",
+      "placeholder": "2",
+      "placeholder_hi": "2",
+      "hint": "Number of revision cycles included before extra charges apply",
+      "hint_hi": "अतिरिक्त शुल्क लागू होने से पहले कितने संशोधन शामिल हैं",
+      "type": "number",
+      "required": true
+    }
+  ],
+  "clauses": [
+    {
+      "id": "parties",
+      "title": "Engagement & Services",
+      "title_hi": "समझौता एवं सेवाएं",
+      "plain": "{clientName} (Client) hires {freelancerName} (Freelancer) to perform: {serviceScope}.",
+      "legal": "THIS INDEPENDENT CONTRACTOR AGREEMENT confirms the engagement between {clientName} (hereinafter 'Client') and {freelancerName} (hereinafter 'Contractor') for provision of services encompassing: {serviceScope}.",
+      "note": "Ensure scope exclusions (what you will NOT do) are clear.",
+      "note_hi": "यह भी स्पष्ट रखें कि कौन सा काम इस फीस में शामिल नहीं है।"
+    },
+    {
+      "id": "compensation",
+      "title": "Compensation & Milestones",
+      "title_hi": "पारिश्रमिक एवं भुगतान",
+      "plain": "The Client agrees to pay ₹{totalFee} according to the schedule: {paymentTerms}. Work starts only after receiving the agreed advance.",
+      "legal": "In consideration of satisfactory completion, the Client covenants to pay total compensation of INR {totalFee}/- payable pursuant to: {paymentTerms}. Work commencement is contingent upon receipt of the initial advance.",
+      "note": "Never transfer editable source files before the final invoice is paid in full.",
+      "note_hi": "पूरा भुगतान मिलने से पहले कभी भी मुख्य सोर्स फाइल न दें।"
+    },
+    {
+      "id": "timeline",
+      "title": "Delivery & Revisions",
+      "title_hi": "डिलीवरी एवं संशोधन",
+      "plain": "The Freelancer will deliver the work by {deliveryDate}. This fee includes up to {revisionLimit} rounds of reasonable revisions. Any additional changes will be billed separately.",
+      "legal": "The Contractor shall complete milestones on or before {deliveryDate}. The agreed consideration encompasses up to {revisionLimit} cycles of minor modifications. Out-of-scope revisions shall be billed at mutually agreed supplementary rates.",
+      "note": "Revisions must align with original scope, not create a new project.",
+      "note_hi": "रिवीजन मूल काम के दायरे में ही होना चाहिए, नया काम नहीं।"
+    },
+    {
+      "id": "ip_rights",
+      "title": "Ownership of Work (IP Rights)",
+      "title_hi": "बौद्धिक संपदा एवं मालिकाना हक",
+      "plain": "All copyright and ownership of the completed work will transfer to the Client ONLY AFTER full payment of ₹{totalFee} is received by the Freelancer.",
+      "legal": "All intellectual property rights and copyrights in the deliverables shall assign to the Client SOLELY UPON receipt of full and final settlement of INR {totalFee}/- by the Contractor.",
+      "note": "Crucial clause: if client defaults on payment, they cannot legally use your work.",
+      "note_hi": "जरूरी नियम: यदि क्लाइंट भुगतान नहीं करता, तो वह आपके काम का उपयोग नहीं कर सकता।"
+    },
+    {
+      "id": "contractor_status",
+      "title": "Independent Contractor Status",
+      "title_hi": "स्वतंत्र सलाहकार का दर्जा",
+      "plain": "The Freelancer is an independent contractor and not an employee of the Client. The Freelancer manages their own taxes and schedule.",
+      "legal": "The Contractor's relationship with the Client is solely that of an independent contractor. Nothing herein shall create any employer-employee, agency, or partnership relationship under Indian labor laws.",
+      "note": "Protects both parties regarding provident fund and employee benefit claims.",
+      "note_hi": "यह दोनों पक्षों को कर्मचारी भविष्य निधि आदि दावों से स्पष्ट रखता है।"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "advance_payment_check",
+      "condition": "!paymentTerms.toLowerCase().includes('advance')",
+      "title": "No Advance Payment Specified",
+      "title_hi": "एडवांस भुगतान का उल्लेख नहीं",
+      "message": "Starting freelance work without a minimum 30% to 50% upfront advance is high risk. In case of client ghosting or cancellation, recovery without an advance is difficult.",
+      "message_hi": "बिना 30-50% एडवांस लिए काम शुरू करना जोखिम भरा है। भुगतान न मिलने पर नुकसान हो सकता है।",
+      "action": "Update payment terms to require an advance deposit before work begins.",
+      "action_hi": "शर्तों में काम शुरू करने से पहले एडवांस की शर्त जोड़ें।"
+    }
+  ]
+}
